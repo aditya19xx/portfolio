@@ -1,23 +1,16 @@
 import logo from './logo.svg';
+import Typical from 'react-typical';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Typical
+      steps={['I am',1000, 'I am Front end developer',500]}
+      loop={Infinity}
+      wrapper="p"
+      />
+      
     </div>
   );
 }
